@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>BELAJAR ELEMEN SEMANTIK DI HTML</h2>
+    </header>
+    <menu>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#kontak">kontak</a>
+        </nav>
+    </menu>
+    <div style="display: flex;">
+        <aside>
+            <!--home-->
+            <section id="home">
+                <article>
+                    <details>
+                        <summary>Lihat Spesifikasi</summary>
+                        <p>- bahan dari audio 1 bersumber dari video cover lagu ibu pertiwi youtube = "shanna shannon"</p>
+                        <p>- bahan dari audio 2 bersumber dari word contoh materi semantik element</p>
+                        <p>- bahan dari video bersumber dari music video "semoga ya" youtube = "nosstress bali" </p>
+                        <p>- bahan dari video gif bersumber dari bersumber dari word contoh materi semantik element</p>
+                        <p>- bahan dari video Subtitle bersumber dari bersumber dari word contoh materi semantik element</p>
+                        <p>- bahan dari video bersumber dari music video "membasuh" youtube = "sun eater" </p>
+                    </details>
+                    <p>Ditulis pada <time datetime="2021-02-11">02 november 2021</time></p>
+                    <p>web ini saya buat pada<time>18:15</time> sampai pukul<time>20:00</time>.</p>
+                </article>
+            </section>
+        </aside>
+        <main>
+            <section id="about">
+                
+            <h3>Contoh Audio di Web</h3>
+            <h5>Audio 1</h5>
+            <audio controls>
+                <source src="ibu pertiwi.mp3" type="audio/mp3">
+                Browsermu tidak mendukung tag audio, upgrade donk!
+            </audio>
+
+            <h5>Audio 2</h5>
+            <audio controls>
+                <source src="https://github.com/petanikode/belajar-html/raw/master/audio/Ngoni.mp3" type="audio/mpeg">
+                Browsermu tidak mendukung tag audio, upgrade donk!
+            </audio>
+
+            <h5>Contoh Video di HTML</h5>
+            <video controls><source src="semoga ya.mp4" type="video/mp4" />
+                Browsermu tidak mendukung tag ini, upgrade donk!
+            </video>
+
+            <h5>Contoh GIF Di HTML</h5>
+            <video autoplay loop muted playsinline>
+                <source src="https://www.petanikode.com/img/html-video/cat-herd.webm" type="video/mp4">
+            </video> 
+
+            <h5>Contoh Video Subtitle Di HTML</h5>
+            <video controls>
+                <source src="cat-herd.webm" type="video/webm"/>
+                <track src="kucing berlari.vtt" kind="subtitles" srclang="id"
+               label="Indonesia"/>
+            </video>
+
+            <h5>Contoh Video YOUTUBE Di HTML</h5>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/emddwjzuNW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </section>
+        </main>
+    </div>
+    <footer>
+        <section id="kontak">
+            copyright &copy; 2021 by pemograman web kode
+        </section>
+    </footer>
+    
+</body>
+</html>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+        background-color: #90AACB;
+        height: 50px;
+        padding: 5px;
+        font-family:'Segoe UI';
+        margin: 0;
+    }
+    menu {
+        background-color: #90AACB;
+        height: 30px;
+        padding: 5px;
+        border-bottom:2px solid #FFB085;
+        margin: 0;
+    }
+    aside{
+        width: 25%;
+        background-color: #fad29d;
+        padding: 5px;
+        display: flex;
+    }
+    main{
+        width: 75%;
+        background-color: #F9D5A7;
+        padding: 5px 20px;     
+    }
+    footer {
+        height: 30px;
+        padding: 5px;
+        background-color: #F3F0D7;
+        clear: both;
+        margin: 0;
+    }
+
+</style>
